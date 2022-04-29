@@ -19,19 +19,19 @@ public class TicTacToe {
                 gameOver = false;
                 turn(in, "X");
                 if (isWin("X")) {
-                    System.out.println("X Wins");
+                    System.out.println("X Wins!");
                     gameOver = true;
                 }
                 if (isTie())
                 {
-                    System.out.println("Its a Tie");
+                    System.out.println("It's a Tie!");
                     gameOver = true;
                 }
                 if (!gameOver)
                 {
                     turn(in, "O");
                     if (isWin("O")) {
-                        System.out.println("O Wins");
+                        System.out.println("O Wins!");
                         gameOver = true;
                     }
                 }
@@ -126,9 +126,7 @@ public class TicTacToe {
             }
             if (completeCol)
             {
-                System.out.println("Colum");
                 return true;
-
             }
         }
         return false;
@@ -151,7 +149,6 @@ public class TicTacToe {
             }
             if (completeRow)
             {
-                System.out.println("Row");
                 return true;
             }
         }
